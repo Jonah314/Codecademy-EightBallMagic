@@ -12,15 +12,15 @@ Ask Your Question Out Loud to the Magic 8 Ball. Click the button Shake and watch
 * HTML
 
 ## Project Goals
-*Using Git:
-    ** Set up Git tracking in your directory and add and commit changes as you make them.
-*Using JavaScript:
-    ** Create an Array of future predictions.
-    ** Create a function to randomly assign a responce from the future predictions array.
-*Using HTML and a little bit of CSS:
-    ** Create a Simple one page Web Page. With One button title "Shake".
-    ** When the Shake button is pressed a future prediction should appear on the webPage.
+* Using Git:
+    * Set up Git tracking in your directory and add and commit changes as you make them.
+* Using JavaScript:
+    * Create an Array of future predictions.
+    * Create a function to randomly assign a responce from the future predictions array.
+* Using HTML and a little bit of CSS:
+    * Create a Simple one page Web Page. With One button title "Shake".
+    * When the Shake button is pressed a future prediction should appear on the webPage.
 ## Authors
-*Jonathan Cantu
+* Jonathan Cantu
 ## License
-  *No License for this project. 
+  * No License for this project. 
