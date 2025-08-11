@@ -1,8 +1,14 @@
+export const message = "Example Message";
+
+
+
 // Create an Array of Future Predictions for the 8 Ball 
 const predictionsArray = ["It is Certain", "Yes, Definitely", "You may rely on it.", "Most likely", "Outlook good", 
     "Don't count on it", "My reply is No", "Outlook no so good", "Ask Again Later", "Reply hazy, try again"];
 
-    
+
+//Using this code to test whether or not the api.js is connecting to index.js
+const message = "Example Message"; 
 
 
 
@@ -16,5 +22,3 @@ function generateMessage(){
 
 }
 
-console.log(generateMessage());
-console.log(generateMessage());
