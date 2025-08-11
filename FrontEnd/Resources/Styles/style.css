@@ -109,3 +109,17 @@ button:active{
 .shake-animation {
   animation: shake 0.5s ease-in-out; /* Adjust duration and timing function as needed */
 }
+
+
+/* ---- Section for hiding and peeking ---- */
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in, visibility 0s linear .75s; /* 0.5s delay for visibility */
+}
+
+.peek {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 01.5s ease-out;
+}

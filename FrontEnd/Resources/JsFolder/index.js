@@ -43,6 +43,16 @@ function retrieveMessage(){
 function clearMessage(){
     messageDisplay.textContent = '';
 }
+function hideDiv(){
+    const divToHide = document.getElementById('hider');
+    divToHide.classList.remove('peek');
+    divToHide.classList.add('hide');
+}
+function fadeIn(){
+    const divToHide = document.getElementById('hider');
+    divToHide.classList.remove('hide');
+    divToHide.classList.add('peek');
+}
 
 
 //------- Adding Shaking Function ------- ///
@@ -53,7 +63,7 @@ function shake(){
     // This section allows you to set the time for shake animation and resets it so you can do it again 
     setTimeout(()=>{
         shakingDiv.classList.remove('shake-animation');
-    },150);
+    },300);
 }
 
 
@@ -66,14 +76,20 @@ function delay(ms){
 }
 
 async function realism(){
-    clearMessage();
+    
+    
     shake();
-    await delay (500);
+    hideDiv();
+    await delay (50);
+    clearMessage();
+    await delay (620);
     retrieveMessage();
+    fadeIn();
+    
     
 }
 
-//when button is clicked it activates the function retrieveMessage
+//when button is clicked it activates the function realism
 myButton.addEventListener("click", realism);
 
 
