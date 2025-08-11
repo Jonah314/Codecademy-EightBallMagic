@@ -1,0 +1,111 @@
+* {
+    font-family: Georgia, serif;
+}
+
+header{
+    /* min-height allows div to expand vertically when window is smaller */
+    min-height: 200px;
+    background-color: Black;
+    justify-content: center;
+    
+}
+
+header h1{
+    color:gold;
+    font-size: 150px;
+    margin:auto auto;
+    text-align: center;
+}
+.Instructions{
+    font-size: 50px;
+    text-align: center;
+}
+
+.eightBallImage{
+    width: 500px;
+    height: 500px;
+    background-color: purple;
+    border-radius: 500px;
+    align-items: center;
+    align-content: center;
+    margin: auto auto;
+    border:3px solid black;
+    z-index: -2;
+    box-shadow: 0 9px #999;
+}
+
+.messageArea{
+    width: 250px;
+    height:250px;
+    background-color:black;
+    border-radius: 250px;
+    color:red;
+    margin: auto auto;
+    text-align: center;
+    border: 5px solid white;
+    z-index: -1;
+   
+}
+
+.triangle{
+    width:0;
+    height: 0;
+    border-left: 90px solid transparent; 
+    border-right: 90px solid transparent; 
+    border-top: 160px solid blue;
+    z-index: 1;
+    position:relative;
+    top: 65px;
+    margin:auto auto;
+    
+}
+/* This section "inFront" is to help center the text onto the blue triangle */
+.inFront{
+    width: 100px;
+    z-index: -50;
+    
+    position:relative;
+    top: -150px;
+    left: -50px;
+    text-align: center;
+}
+#messageDisplay{
+    color: white;
+    font-size: 20px;
+    z-index: 50;
+    text-align: center;
+}
+
+.buttonSection{
+    display:flex;
+    align-items: center;
+    align-content: center;
+    margin: auto auto;
+    padding: 25px;
+}
+button{
+    width: 200px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: gold;
+    margin: auto auto;
+    font-size: 40px;
+    padding: 15px;
+    box-shadow: 0 9px #999;
+}
+button:active{
+    box-shadow: 0 5px #666; 
+    transform: translateY(4px);
+}
+
+
+/*------ Shaking Animation ------- */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.shake-animation {
+  animation: shake 0.5s ease-in-out; /* Adjust duration and timing function as needed */
+}
