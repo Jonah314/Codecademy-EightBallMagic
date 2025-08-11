@@ -1,6 +1,3 @@
-export const message = "Example Message";
-
-
 
 // Create an Array of Future Predictions for the 8 Ball 
 const predictionsArray = ["It is Certain", "Yes, Definitely", "You may rely on it.", "Most likely", "Outlook good", 
@@ -8,17 +5,19 @@ const predictionsArray = ["It is Certain", "Yes, Definitely", "You may rely on i
 
 
 //Using this code to test whether or not the api.js is connecting to index.js
-const message = "Example Message"; 
+export const message = "Example Message";
 
 
 
 // Create a function the produces a random message from the array
 // The function should return a String
 
-function generateMessage(){
-    const index = Math.floor(Math.random()*10);
-    message = predictionsArray[index];
-    return message;
-
+export function generateMessage(){
+    let index = Math.floor(Math.random()*10);
+    let pmessage = predictionsArray[index];
+    
+    return pmessage;
 }
+
+
 

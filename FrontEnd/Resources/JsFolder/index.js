@@ -1,16 +1,20 @@
-import {message} from '../../../../Codecademy-EightBallMagic/BackEnd/api.js';
+//import {generateMessage} from '../../../../Codecademy-EightBallMagic/BackEnd/api.js';
+
 const myButton = document.getElementById("myButton");
 const messageDisplay = document.getElementById("messageDisplay");
-let predictiveMessage = message.textContent;
+//let generatedMessage = generateMessage();
 
 function createAlert(){
     alert("Button was Clicked!");
 }
 function retrieveMessage(){
-    messageDisplay.textContent = predictiveMessage;
+    messageDisplay.textContent = generatedMessage;
 }
 
 
-myButton.addEventListener("click", retrieveMessage);
+myButton.addEventListener("click", createAlert);
 
-console.log(message);
+
+
+
+//console.log(generatedMessage);
