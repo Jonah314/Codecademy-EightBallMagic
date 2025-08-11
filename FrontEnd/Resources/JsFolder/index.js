@@ -1,5 +1,7 @@
 const myButton = document.getElementById("myButton");
 
-myButton.addEventListener("click", function(e){
-    alert("Button was Clicked!!");
-});
+function createAlert(){
+    alert("Button was Clicked!");
+}
+
+myButton.addEventListener("click", createAlert);
