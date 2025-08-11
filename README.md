@@ -9,6 +9,12 @@ Ask a question about your future, shake the ball, and receive an answer.
 2. Click the **Shake** button.  
 3. Watch as your prediction is revealed.
 
+## Preview
+![Magic 8 Ball Screenshot](FrontEnd/Resources/Images/Screenshot (1).png)  
+*Example of the Magic 8 Ball interface in action.*  
+
+[**Live Demo**](#) *(Add your GitHub Pages or hosting link here)*
+
 ## Features
 * JavaScript
 * Git & GitHub
