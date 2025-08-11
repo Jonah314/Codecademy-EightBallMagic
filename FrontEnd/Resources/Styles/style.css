@@ -44,7 +44,7 @@ header h1{
     text-align: center;
     border: 5px solid white;
     z-index: -1;
-   
+   box-shadow: 0 9px #999;
 }
 
 .triangle{
@@ -69,6 +69,8 @@ header h1{
     left: -50px;
     text-align: center;
 }
+
+
 #messageDisplay{
     color: white;
     font-size: 20px;
