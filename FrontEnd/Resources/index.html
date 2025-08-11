@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eight Ball Magic</title>
     <link rel="stylesheet" href= "Styles/style.css">
-    <script src = "JsFolder/index.js"></script>
+    <script src="JsFolder/index.js"></script>
 
   </head>
 
@@ -15,9 +15,16 @@
   <body>
     <header> <h1>MAGIC 8 BALL !!!!</Main></h1></header>
     <div class = "Instructions"> <h5> Ask many Anything and Shake the ball for a future prediction</h5></div>
-    <div class = "eightBallImage"></div>
+    
+    <div class = "displayArea">
+        <div class = "eightBallImage"></div>
+        <div class = "messageArea">
+            <p> This area is where the message will appear </p>
+        </div>
+    </div>
+
     <div class = "buttonSection">
-        <button> Shake </button>
+        <button id = "myButton"> Shake </button>
     </div>
     <script src="index.js"></script>
   </body>
