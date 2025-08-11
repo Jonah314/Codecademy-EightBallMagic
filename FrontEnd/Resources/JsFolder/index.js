@@ -77,12 +77,15 @@ function delay(ms){
 
 async function realism(){
     
-    
+    //First we shake the ball, abd hide the blue triangle
     shake();
     hideDiv();
     await delay (50);
+    // we clear the message as the triangle fades in to the back of the ball
     clearMessage();
+    // we give the ball some time before it predicts the next message
     await delay (620);
+    // we retrieve the new message and have it fade back in
     retrieveMessage();
     fadeIn();
     
